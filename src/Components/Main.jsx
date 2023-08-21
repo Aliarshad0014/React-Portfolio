@@ -30,7 +30,7 @@ export default function Main() {
                         </a>
                     </div>
                 </div>
-                <div className="lg:mt-30 lg:w-96 mb-10 right flex justify-center w-72 mt-20 ml-20 items-center">
+                <div className="lg:mt-40 lg:w-96 mb-10 right flex justify-center w-72 mt-20 ml-20 items-center">
                     <img src={DeveloperImage} alt="Developer" />
                 </div>
             </section>
