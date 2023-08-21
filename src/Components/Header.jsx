@@ -45,7 +45,7 @@ export default function Header() {
           {navBar?  <FaTimes size={30}/> :<FaBars size={30}/>}
         </div>
         {navBar && 
-        <ul className="h-[100vh] text-teal-50 phone-view lg:hidden flex flex-col justify-center items-center absolute top-0 left-0 w-full bg-gradient-to-b from-teal-700 to-teal-950">
+        <ul className={`h-[100vh] text-teal-50 phone-view lg:hidden flex flex-col justify-center items-center absolute top-0 left-0 w-full bg-gradient-to-b from-teal-700 to-teal-950 transition-transform duration-500 ${navBar ? 'transform translate-y-0' : 'transform translate-y-full'}`}>
         <button className="px-4 capitalize py-6 text-2xl" >
           <Link onClick={onNavClick} to="Home" spy={true} smooth={true}>
               Home
