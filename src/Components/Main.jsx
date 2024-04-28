@@ -10,6 +10,7 @@ export default function Main(props) {
     var typed = new Typed('#element', {
       strings: ['React',"Node Js","HTML"," CSS","Github","Python","React Native","Adobe Illustrator", "Ui/Ux"],
       typeSpeed: 50,
+      loop:true
     });
 
     return () => {
