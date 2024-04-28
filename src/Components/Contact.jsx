@@ -1,11 +1,10 @@
 import React from "react";
-import ContactImg from "../Components/Images/ContactImg.jpeg";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Instagram from "../Components/Images/instagram.png"
 import linkedin from "../Components/Images/linkedin.png"
 import faceboook from "../Components/Images/facebook.png"
 import twitter from "../Components/Images/twitter.png"
-
-
 
 export default function Contact() {
     const socials = [
@@ -29,7 +28,8 @@ export default function Contact() {
             src: twitter,
             style: "hover:shadow-teal-400"
         }
-    ]
+    ];
+
     const getSocialMediaLink = (id) => {
         switch (id) {
             case 1:
@@ -41,10 +41,9 @@ export default function Contact() {
             case 4:
                 return "https://twitter.com/your_twitter_username/";
             default:
-
+                return "";
         }
     };
-
 
     const handleCopyEmail = () => {
         const email = "aliarshad0014@gmail.com";
@@ -57,56 +56,53 @@ export default function Contact() {
             });
     };
 
+    const handleSendButtonClick = (e) => {
+        e.preventDefault();
+        // Display "sending..." toast
+        toast.promise(
+            new Promise(resolve => setTimeout(resolve, 2000)),
+            {
+                pending: 'Sending...', // Display this while promise is pending
+                success: 'Sent!', // Display this when promise resolves
+                error: 'Failed to send message' // Display this when promise rejects
+            }
+        );
+    };
+
     return (
         <>
-            <hr className="border-teal-100 lg:mt-2 lg:ml-40 lg:mr-40 mt-10 ml-20 mr-20" />
-            
+            <ToastContainer />
+            <hr className="flex justify-center items-center border-teal-900 w-1/2 mb-12 mx-auto bg-gray-900" />
 
-            <div id="Contact" className=" lg:ml-40 lg:mt-20 lg:mb-16 lg:mr-40 lg:justify-around justify-between Contact flex h-screen bg-white shadow-lg">
-                <div className="hidden lg:mt-20 Left lg:flex lg:flex-col lg:items-center">
-                    <p className="text-xl font-bold text-teal-800">Hi, Let's Have A Quick Chat 💭</p>
-                    <p className="text-gray-500  font-semibold text-md">I Reply Instantly</p>
-                    <button
-                        onClick={handleCopyEmail}
-                        className="bg-teal-800 text-sm mt-2 hover:scale-105 transition-all hover:bg-teal-500 text-white px-4 py-2 rounded"
-                    >🔗 Email Me
-                    </button>
+            <section id="Contact" className="flex justify-center items-start lg:ml-0 mb-10 lg:h-screen max-w-screen">
+                <div>
+                    <p className="lg:text-5xl text-lg font-bold lg:ml-0 text-gray-100">Hello World! Let's start A Project Together</p>
+                    <p></p>
 
-                    <img className="lg:mt-24 lg:w-96 right" src={ContactImg} alt="Developer" />
-                </div>
+                    {/* Form starts here */}
+                    <form className="mt-16 mx-auto max-w-5xl">
+                        <div className="mb-4 h-24">
+                            <label htmlFor="name" className="block text-gray-100 lg:text-lg text-sm font-bold mb-2">Whats Your Name?</label>
+                            <input type="text" id="name" name="name" className="border border-x-0 border-t-0 border-teal-500 appearance-none  w-full py-2 text-gray-100 leading-tight focus:outline-none focus:shadow-outline bgg" placeholder="Jhon Doe *" />
+                        </div>
 
-                <div className="Right mt-32 ml-5 mb-12 w-11/12 h-[70vh] lg:h-[90vh] lg:mt-8  text-white flex flex-col justify-between items-end bg-teal-700 rounded-lg lg:w-5/12" >
-                    <span className="text-4xl font-bold Contact mt-5 px-12">Contact <br /> <span className="flex justify-end">Me</span></span>
-                    
+                        <div className="mb-4 h-24">
+                            <label htmlFor="email" className="block text-gray-100 lg:text-lg text-sm font-bold mb-2">Whats Your Email?</label>
+                            <input type="email" id="email" name="email" className="border border-x-0 border-t-0 border-teal-500 appearance-none bgg w-full py-2 text-gray-100 leading-tight focus:outline-none focus:shadow-outline" placeholder="Jhon@doe.com *" />
+                        </div>
 
-                    <div className="lg:hidden mr-12"> 
-                    <p className="text-xl mt-0 font-bold text-teal-50">Hi, Let's Have A Quick Chat 💭 </p>
-                    </div>
-
-                    <div className="flex flex-col ml-14 lg:ml-28 text-white ">
-                        <form action="" >
-                            <input type="text" name="name" placeholder=" Your Name" className="p-2 mb-4 bg-transparent w-72 border-b-2 border-gray-300 text-white focus:outline-none"/> 
-                            <input type="text" name="email" placeholder=" Your Email" className="p-2 mb-4 bg-transparent w-72 border-b-2 border-gray-300 text-white focus:outline-none"/> 
-                            <textarea name="message" rows="10" placeholder="Your Message Here" className="p-2 max-h-12 w-72 mb-4 bg-transparent border-b-2 border-gray-300 resize-none text-white focus:outline-none"></textarea>
-                            <button className="bg-white w-60 text-black px-6 py-3 my-8 mx-6 flex items-center rounded-md hover:scale-110 duration-300 justify-center"> Submit </button>
-                        </form>
-                        
-                    </div>
-                    
-                    <div className="mr-16 mb-10 flex lg:gap-16 lg:mb-10 lg:mr-20 gap-11 ">
-                    {
-                        socials.map(({ id, src, style }) => (
-                            <a key={id} href={getSocialMediaLink(id)} target="_blank" rel="noopener noreferrer">
-                                <img className={`Socials hover:shadow-purple-700 shadow-md hover:scale-110 duration-500 w-8 bg-white p-2 rounded-xl ${style}`} src={src} alt="Developer" />
-                            </a>
-                        ))
-                    }
-                    </div>
+                        <div className="mb-6">
+                            <label htmlFor="message" className="block text-gray-100 lg:text-lg text-sm font-bold mb-2">Your Message</label>
+                            <textarea id="message" name="message" rows="6" className="appearance-none border border-x-0 border-t-0 border-teal-500 bgg w-full py-2 text-gray-100 leading-tight focus:outline-none focus:shadow-outline resize-none" placeholder="Hello Ali, Can you help me with...*"></textarea>
+                        </div>
+                        <div className="flex items-center justify-end">
+                            <button type="submit" onClick={handleSendButtonClick} className="bg-teal-700 hover:bg-teal-500 w-1/4 text-white font-bold py-2 px-4 rounded-sm focus:outline-none focus:shadow-outline ease-in-out duration-500">Send it!</button>
+                        </div>
+                    </form>
+                    {/* Form ends here */}
 
                 </div>
-            </div>
+            </section>
         </>
     );
 }
-
-

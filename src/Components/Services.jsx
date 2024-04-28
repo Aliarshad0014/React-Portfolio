@@ -51,7 +51,7 @@ export default function Services() {
             id: 7,
             src: amazon,
             title: "Amazon Web Services",
-            style: "shadow-black text-sm"
+            style: "shadow-white text-sm"
         },
         {
             id: 8,
@@ -63,29 +63,29 @@ export default function Services() {
             id: 9,
             src: github,
             title: "Github",
-            style: "shadow-black"
+            style: "shadow-white"
         }
 
     ]
     return (
         <>
-            <hr className="border-teal-100 lg:mt-2 lg:ml-40 lg:mr-40 mt-10 ml-20 mr-20" />
+            <hr className="flex justify-center items-center border-teal-900 w-1/2 mx-auto bg-gray-900" />
 
-            <section id="Services" className=" flex mt-8 lg:ml-60 ml-8 h-screen bg-white">
-                <div className="mt-20">
+            <section id="Services" className=" flex justify-center items-center min-h-screen">
+                <div className="">
 
-                    <p className="ml-6 lg:ml-0 lg:text-xl font-bold text-teal-800">Services</p>
-                    <hr className="border-t-2 border-teal-800 ml-6 lg:ml-0 mt-2 w-9 font-extrabold md:font-extrabold" />
+                    <p className=" lg:text-4xl lg:text-center text-lg font-bold text-gray-100">S E R V I C E S</p>
+                    <hr className="border-t-2 border-teal-800 lg:ml-0 w-9 font-extrabold md:font-extrabold" />
 
-                    <p className="mt-2 mb-3 lg:ml-0 ml-6 text-sm max-w-5xl">Here are some of the Technologies i have worked in.</p>
+                    <p className="mt-4 mb-3 text-xs max-w-5xl lg:text-center text-white">Here are some of the Technologies i have worked in.</p>
 
-                    <div className=" w-full grid grid-cols-2 lg:grid-cols-3 lg:gap-8 gap-6 ml-3 lg:ml-0 text-center py-8 px-2 lg:px-16">
+                    <div className="w-full grid grid-cols-2 lg:grid-cols-3 lg:gap-8 gap-6 text-center py-8 px-2">
 
                         {
                             logos.map(({ id, src, title, style }) => (
-                                <div key={id} className={`shadow-md  hover:scale-105 duration-500 py-3 lg:px-20 rounded-lg ${style}`}>
+                                <div key={id} className={`shadow-md bg-gray-0 hover:scale-105 bg duration-500 py-3 lg:px-20 rounded-lg ${style}`}>
                                     <img src={src} alt="" className="w-16 lg:w-20 mx-auto" />
-                                    <p className=" text-teal-950 mt-2 text-center">{title}</p>
+                                    <p className=" text-teal-50 mt-2 text-center">{title}</p>
                                 </div>
 
                             ))
