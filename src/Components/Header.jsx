@@ -28,12 +28,12 @@ export default function Header(props) {
         <div className="hidden lg:flex mr-24 space-x-4 font-light text-lg">
           {/* Your navigation buttons */}
           <button className="hover:text-teal-500 h-9 w-24 rounded-md ease-in-out duration-500 transition-all text-white">
-            <Link to="about" spy={true} smooth={true} offset={-40}>
+            <Link to="about" spy={true} smooth={true} offset={-20}>
               About
             </Link>
           </button>
           <button className="hover:text-teal-500 h-9 w-24 rounded-md ease-in-out duration-500 transition-all text-white">
-            <Link to="Services" spy={true} smooth={true} offset={-50}>
+            <Link to="Services" spy={true} smooth={true} offset={-60}>
               Services
             </Link>
           </button>
@@ -43,7 +43,7 @@ export default function Header(props) {
             </Link>
           </button>
           <button className="hover:text-teal-500 h-9 w-24 rounded-md ease-in-out duration-500 transition-all text-white">
-            <Link to="Contact" spy={true} smooth={true} offset={-100}>
+            <Link to="Contact" spy={true} smooth={true} offset={-120}>
               Contact
             </Link>
           </button>
@@ -55,7 +55,7 @@ export default function Header(props) {
           {navBar ? <FaTimes size={30} /> : <FaBars size={30} />}
         </div>
         {navBar && (
-          <ul className=" h-[100vh] text-teal-50 phone-view lg:hidden flex flex-col justify-center items-center absolute top-0 left-0 w-full bg-gradient-to-b from-teal-700 to-teal-950 ">
+          <ul className=" h-[100vh] text-teal-50 phone-view lg:hidden flex flex-col justify-center items-center absolute top-0 left-0 w-full bggradient ">
             <button className="px-4 capitalize py-6 text-2xl">
               <Link onClick={onNavClick} to="Home" spy={true} smooth={true} offset={20}>
                 Home

@@ -74,8 +74,8 @@ export default function Services() {
             <section id="Services" className=" flex justify-center items-center min-h-screen">
                 <div className="">
 
-                    <p className=" lg:text-4xl lg:text-center text-lg font-bold text-gray-100">S E R V I C E S</p>
-                    <hr className="border-t-2 border-teal-800 lg:ml-0 w-9 font-extrabold md:font-extrabold" />
+                    <p className=" lg:text-4xl lg:text-center text-lg font-bold text-purple-500">S E R V I C E S</p>
+                    <hr className="lg:hidden border-t-2 border-teal-800 lg:ml-0 w-9 font-extrabold md:font-extrabold" />
 
                     <p className="mt-4 mb-3 text-xs max-w-5xl lg:text-center text-white">Here are some of the Technologies i have worked in.</p>
 

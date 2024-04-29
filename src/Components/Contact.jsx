@@ -76,7 +76,7 @@ export default function Contact() {
 
             <section id="Contact" className="flex justify-center items-start lg:ml-0 mb-10 lg:h-screen max-w-screen">
                 <div>
-                    <p className="lg:text-5xl text-lg font-bold lg:ml-0 text-gray-100">Hello World! Let's start A Project Together</p>
+                    <p className="lg:text-5xl text-lg font-bold lg:ml-0 text-gray-100"><span className="text-purple-500">Hello World!</span> Let's start A Project Together</p>
                     <p></p>
 
                     {/* Form starts here */}
@@ -96,7 +96,7 @@ export default function Contact() {
                             <textarea id="message" name="message" rows="6" className="appearance-none border border-x-0 border-t-0 border-teal-500 bgg w-full py-2 text-gray-100 leading-tight focus:outline-none focus:shadow-outline resize-none" placeholder="Hello Ali, Can you help me with...*"></textarea>
                         </div>
                         <div className="flex items-center justify-end">
-                            <button type="submit" onClick={handleSendButtonClick} className="bg-teal-700 hover:bg-teal-500 w-1/4 text-white font-bold py-2 px-4 rounded-sm focus:outline-none focus:shadow-outline ease-in-out duration-500">Send it!</button>
+                            <button type="submit" onClick={handleSendButtonClick} className="bg-gray-700 hover:bg-gray-800 w-1/4 text-white font-bold py-2 px-4 rounded-sm focus:outline-none focus:shadow-outline ease-in-out duration-500 hover:text-teal-500">Send it!</button>
                         </div>
                     </form>
                     {/* Form ends here */}

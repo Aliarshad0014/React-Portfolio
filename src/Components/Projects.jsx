@@ -49,8 +49,8 @@ export default function Services() {
 
             <section id="projects" className="flex justify-center items-center min-h-screen mb-12 mt-12">
                 <div>
-                    <p className="lg:text-4xl lg:text-center text-lg font-bold text-gray-100 lg:ml-0 ml-5 ">PROJECTS</p>
-                    <hr className="border-t-2 border-teal-800 ml-5 lg:ml-0  w-9 font-extrabold md:font-extrabold" />
+                    <p className="lg:text-4xl lg:text-center text-lg font-bold text-purple-500 lg:ml-0 ml-5 ">PROJECTS</p>
+                    <hr className="lg:hidden border-t-2 border-teal-800 ml-5 lg:ml-0  w-9 font-extrabold md:font-extrabold" />
                     <p className="mt-4 mb-3 lg:ml-0 ml-5 lg:text-center text-xs text-white">Here are some of the Projects I have Made.</p>
                     <div className="max-w-screen-lg mx-auto lg:px-0 px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-6 gap-14 mt-6">
                         {projects.map(project => (
