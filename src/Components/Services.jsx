@@ -50,8 +50,8 @@ export default function Services() {
         {
             id: 7,
             src: amazon,
-            title: "Amazon Web Services",
-            style: "shadow-white text-sm"
+            title: "AWS",
+            style: "shadow-white"
         },
         {
             id: 8,
@@ -71,13 +71,13 @@ export default function Services() {
         <>
             <hr className="flex justify-center items-center border-teal-900 w-1/2 mx-auto bg-gray-900" />
 
-            <section id="Services" className=" flex justify-center items-center min-h-screen">
+            <section id="Services" className=" flex justify-center items-center h-screen lg:mt-0 lg:mb-0 mt-12 mb-12">
                 <div className="">
 
-                    <p className=" lg:text-4xl lg:text-center text-lg font-bold text-purple-500">S E R V I C E S</p>
-                    <hr className="lg:hidden border-t-2 border-teal-800 lg:ml-0 w-9 font-extrabold md:font-extrabold" />
+                    <p className="lg:text-4xl lg:text-center text-lg font-bold text-purple-500 text-center lg:mt-0">S E R V I C E S</p>
+                    {/* <hr className="lg:hidden border-t-2 border-teal-800 lg:ml-0 w-9 font-extrabold md:font-extrabold" /> */}
 
-                    <p className="mt-4 mb-3 text-xs max-w-5xl lg:text-center text-white">Here are some of the Technologies i have worked in.</p>
+                    <p className="mt-2  text-xs max-w-5xl lg:text-center text-white">Here are some of the Technologies i have worked in.</p>
 
                     <div className="w-full grid grid-cols-2 lg:grid-cols-3 lg:gap-8 gap-6 text-center py-8 px-2">
 

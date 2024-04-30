@@ -47,11 +47,11 @@ export default function Services() {
         <>
             <hr className="flex justify-center items-center border-teal-900 w-1/2 mx-auto bg-gray-900" />
 
-            <section id="projects" className="flex justify-center items-center min-h-screen mb-12 mt-12">
+            <section id="projects" className="flex justify-center items-center min-h-screen mb-12 mt-12 ">
                 <div>
-                    <p className="lg:text-4xl lg:text-center text-lg font-bold text-purple-500 lg:ml-0 ml-5 ">PROJECTS</p>
-                    <hr className="lg:hidden border-t-2 border-teal-800 ml-5 lg:ml-0  w-9 font-extrabold md:font-extrabold" />
-                    <p className="mt-4 mb-3 lg:ml-0 ml-5 lg:text-center text-xs text-white">Here are some of the Projects I have Made.</p>
+                    <p className="lg:text-4xl text-center text-lg font-bold text-purple-500">P R O J E C T S</p>
+                    {/* <hr className="lg:hidden border-t-2 border-teal-800 ml-5 lg:ml-0  w-9 font-extrabold md:font-extrabold" /> */}
+                    <p className="mt-2 text-center text-xs text-white">Here are some of the Projects I have Made.</p>
                     <div className="max-w-screen-lg mx-auto lg:px-0 px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-6 gap-14 mt-6">
                         {projects.map(project => (
                             <div key={project.id} className={`hover:scale-105 duration-500 bg transition-all shadow-md relative overflow-hidden cursor-pointer ${project.style}`}>
@@ -60,7 +60,7 @@ export default function Services() {
                                     <p className="text-white font-semibold text-lg">Preview</p>
                                 </div>
                                 <div className="p-6">
-                                    <h3 className="text-lg font-semibold text-gray-100 mb-2">{project.title}</h3>
+                                    <h3 className="lg:text-lg text-md font-semibold text-gray-100 mb-2">{project.title}</h3>
                                     <p className="text-gray-400 text-sm">{project.description}</p>
                                 </div>
                             </div>
