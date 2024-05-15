@@ -1,6 +1,49 @@
 import React from "react";
+import Instagram from "../Components/Images/instagram.png"
+import linkedin from "../Components/Images/linkedin.png"
+import faceboook from "../Components/Images/facebook.png"
+import twitter from "../Components/Images/twitter.png"
 
 export default function Footer() {
+
+    const getSocialMediaLink = (id) => {
+        switch (id) {
+            case 1:
+                return "https://www.instagram.com/";
+            case 2:
+                return "https://www.linkedin.com/feed/";
+            case 3:
+                return "https://www.facebook.com/";
+            case 4:
+                return "https://twitter.com/your_twitter_username/";
+            default:
+                return "";
+        }
+    };
+
+    const socials = [
+        {
+            id: 1,
+            src: Instagram,
+            style: "hover:shadow-teal-400"
+        },
+        {
+            id: 2,
+            src: linkedin,
+            style: "hover:shadow-teal-400"
+        },
+        {
+            id: 3,
+            src: faceboook,
+            style: "hover:shadow-teal-400"
+        },
+        {
+            id: 4,
+            src: twitter,
+            style: "hover:shadow-teal-400"
+        }
+    ];
+
     return (
         <section
             style={{

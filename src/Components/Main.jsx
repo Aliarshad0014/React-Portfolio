@@ -32,16 +32,17 @@ export default function Main(props) {
             <div className="w-full absolute text-lg lg:text-4xl flex flex-col items-center">
               <div className="w-2/3">
                 <div className="w-full">
-                  <p className="font-bold">Greetings, I'm <span id="aliElement" className="text-purple-500"></span>
-                    <p className="text-xl font-normal">A proficient Web Developer <br /> Crafting digital experiences with    <br />Expertise in  <span id="element" className="text-purple-500 text-2xl font-bold"></span> </p>
+                  <p className="font-bold">Greetings, I'm <span id="aliElement" className="text-purple-500 lg:text-4xl text-2xl"></span>
+                    <p className="text-xl font-normal">A proficient Web Developer <br /> Crafting digital experiences with    <br />Expertise in  <span id="element" className="text-purple-500 lg:text-2xl text-xl font-bold"></span> </p>
                   </p>
+
                 </div>
                 <p className=" text-sm font-thin mt-2"> Looking for a proficient designer and developer for your project? Look no further! With a keen eye for design and solid coding skills, I bring a unique blend of creativity and technical expertise to every project.</p>
                 <div className="flex space-x-4 pt-4">
                   <a
                     href={ResumeFile}
                     download="Ali_Resume.pdf"
-                    className="bg-gray-700 hover:scale-1 ease-in-out duration-500  transition-all w-38 text-sm hover:bg-gray-800 text-white px-4 py-2 rounded-sm hover:text-teal-500"
+                    className="bgnew ease-in-out duration-500  transition-all  w-38 text-sm hover:bg-gray-800 text-white px-4 py-2 rounded-sm hover:text-teal-500"
                   >
                     Download Resume
                   </a>
@@ -49,7 +50,7 @@ export default function Main(props) {
                     href="https://github.com/Aliarshad0014"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-gray-700 hover:scale-1 ease-in-out duration-500  transition-all w-18 text-sm hover:bg-gray-800 text-white px-4 py-2 rounded-sm hover:text-teal-500"
+                    className="bgnew hover:scale-1 ease-in-out duration-500  transition-all w-18 text-sm hover:bg-gray-800 text-white px-4 py-2 rounded-sm hover:text-teal-500"
                   >
                     Github
                   </a>

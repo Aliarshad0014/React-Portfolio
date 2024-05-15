@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-scroll";
-import { FaBars, FaTimes } from "react-icons/fa";
+// import { FaBars, FaTimes } from "react-icons/fa";
+import { RiCloseLine } from "react-icons/ri";
+import { RiMenu3Line } from "react-icons/ri";
 
 import logo from "../Components/Images/logo.png";
 
@@ -45,7 +47,7 @@ export default function Header(props) {
             </Link>
           </button>
           <button className="hover:text-teal-500 h-9 w-24 rounded-md ease-in-out duration-500 transition-all text-white">
-            <Link to="Contact" spy={true} smooth={true} offset={-50}>
+            <Link to="Contact" spy={true} smooth={true} offset={-40}>
               Contact
             </Link>
           </button>
@@ -54,7 +56,7 @@ export default function Header(props) {
           onClick={onNavClick}
           className="lg:hidden flex mt-1 top-0 z-50 text-gray-500 cursor-pointer"
         >
-          {navBar ? <FaTimes size={30} /> : <FaBars size={30} />}
+          {navBar ? <RiCloseLine size={30} /> : <RiMenu3Line size={30} />}
         </div>
 {navBar && (
   <ul className={`h-[100vh] text-teal-50 phone-view lg:hidden flex flex-col justify-center items-center absolute top-0 left-0 w-full bggradient ${animate ? 'slideIn' : ''}`}>
