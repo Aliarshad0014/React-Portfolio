@@ -90,7 +90,7 @@ export default function Contact() {
             <ToastContainer />
             <hr className="flex justify-center items-center border-teal-900 w-1/2 mb-12 mx-auto bg-gray-900" />
 
-            <section id="Contact" className="flex justify-center items-center lg:h-screen max-w-screen min-h-screen">
+            <section id="Contact" className=" flex justify-center items-center lg:h-screen max-w-screen min-h-screen">
                 <div>
                     <p className="lg:text-5xl text-lg font-bold lg:ml-0 text-gray-100"><span className="text-purple-500 lg:text-6xl text-xl">Hello World!</span> Let's start A Project Together</p>
                     <p></p>

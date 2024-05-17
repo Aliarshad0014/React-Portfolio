@@ -7,6 +7,7 @@ import Header from './Components/Header';
 import Main from './Components/Main';
 import Services from './Components/Services';
 import Project from './Components/Projects';
+import ParticlesBackground from './Components/ParticlesBackground';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -16,17 +17,19 @@ function App() {
   };
 
   return (
-    <>
+  <>
+    <ParticlesBackground />
+    <div className="z-10">
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Main darkMode={darkMode} />
       <About darkMode={darkMode} />
       <Services darkMode={darkMode} />
-      <Project/>
+      <Project />
       <Contact darkMode={darkMode} />
       <Footer darkMode={darkMode} />
+    </div>
     </>
   );
 }
 
 export default App;
-

@@ -85,7 +85,7 @@ export default function Services() {
 
                         {
                             logos.map(({ id, src, title, style }) => (
-                                <div key={id} className={`shadow-md bg-gray-0 hover:scale-105 bg duration-500 py-3 lg:px-20 rounded-lg ${style}`}>
+                                <div key={id} className={`z-10 shadow-md bg-gray-0 hover:scale-105 bg duration-500 py-3 lg:px-20 rounded-lg ${style}`}>
                                     <img src={src} alt="" className="w-16 lg:w-20 mx-auto" />
                                     <p className=" text-teal-50 mt-2 text-center">{title}</p>
                                 </div>
