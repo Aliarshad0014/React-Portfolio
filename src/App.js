@@ -17,9 +17,8 @@ function App() {
   };
 
   return (
-  <>
-    <ParticlesBackground />
     <div className="z-10">
+    <ParticlesBackground />
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Main darkMode={darkMode} />
       <About darkMode={darkMode} />
@@ -28,7 +27,6 @@ function App() {
       <Contact darkMode={darkMode} />
       <Footer darkMode={darkMode} />
     </div>
-    </>
   );
 }
 

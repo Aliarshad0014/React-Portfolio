@@ -21,7 +21,7 @@ const particlesOptions = {
         },
     },
     fullScreen: {
-        enable: false,
+        enable: true,
         zIndex: -1,
     },
     detectRetina: true,
@@ -56,7 +56,7 @@ const particlesOptions = {
             },
         },
         size: {
-            value: 2.5,
+            value: 1.5,
             random: true,
             anim: {
                 enable: true,
