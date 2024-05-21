@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Typed from "typed.js";
 
 import DeveloperImage from "../Components/Images/Developer.png";
-import ResumeFile from "../Components/Images/Curriculum vitae - Ali Arshad.pdf";
+import ResumeFile from "../Components/Images/CV.pdf";
 
 export default function Main(props) {
   useEffect(() => {
